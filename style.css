@@ -1,0 +1,86 @@
+body {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-size: 2.5rem;
+	background: rgb(21, 98, 185);
+	padding: 1.5rem;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	background: rgb(216, 69, 69);
+	color: white;
+	padding: 1.2rem;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+img {
+	height: 5rem; /* 7 * 16px = 128px */
+	width: 5rem;
+	cursor: pointer;
+}
+
+#header-images {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#container-btn {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	font-size: 1.5rem;
+	color: white;
+	background: rgba(8, 133, 8, 0.8);
+	padding: 1rem;
+	border: none;
+	border-radius: 1.5rem;
+	margin: 1.5rem;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+	width: 70vw;
+	height: 59vh;
+	border: 1px solid rgb(128, 105, 105);
+	background: url('./imgs/background.png');
+}
+
+#stats {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 3rem 0 3rem;
+	background: lightskyblue;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.not-selected {
+	padding: 1.5rem;
+	border-radius: 2rem;
+	background: lightgray;
+}
+
+.selected {
+	padding: 1.5rem;
+	border-radius: 2rem;
+	background: greenyellow;
+}

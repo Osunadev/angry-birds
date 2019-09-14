@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+		<title>Angry Birds</title>
+	</head>
+	<body>
+        <h1>Angry Birds Beta</h1>
+        <h2>Selecciona un personaje</h2>
+        <div id="header-images">
+            <div onclick='handleBird(0)' class="selected" id='red-bird'><img src="./imgs/red-bird.png" alt="red-bird"></div>
+            <div onclick='handleBird(1)' class="not-selected" id='blue-bird'><img src="./imgs/blue-bird.png" alt="blue-bird"></div>
+            <div onclick='handleBird(2)' class="not-selected" id='black-bird'><img src="./imgs/black-bird.png" alt="black-bird"></div>
+            <div onclick='handleBird(3)' class="not-selected" id='yellow-bird'><img src="./imgs/yellow-bird.png" alt="yellow-bird"></div>
+            <div onclick='handleBird(4)' class="not-selected" id='white-bird'><img src="./imgs/white-bird.png" alt="white-bird"></div>
+        </div>
+        <div id='container-btn'>
+            <button onclick='startGame()'>Comenzar Juego</button>
+        </div>
+        <div class="container">
+            <div id="stats">
+                <h3>NOMBRE: <span id='stat-nombre'></span></h3>
+                <h3>FORMA: <span id='stat-forma'></span></h3>
+                <h3>POSICION: <span id='stat-posicion'></span></h3>
+                <h3>MASA: <span id='stat-masa'></span></h3>
+                <h3>HABILIDAD: <span id='stat-habilidad'></span></h3>
+            </div>
+            <canvas />
+        </div>
+		<script src="script.js"></script>
+	</body>
+</html>
